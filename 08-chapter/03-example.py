@@ -1,3 +1,4 @@
+import os
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.llms.openai import OpenAI
 from llama_index.core.evaluation import FaithfulnessEvaluator, RelevancyEvaluator, RetrieverEvaluator

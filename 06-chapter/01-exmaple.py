@@ -1,13 +1,24 @@
 from langchain_core.documents import Document
 from types import List
+import tiktoken
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # 小文档块大小
 BASE_CHUNK_SIZE = 50
 # 小块的重叠部分大小
 CHUNK_OVERLAP = 0
+
+tokenizer = tiktoken.get_encoding('p50k_base')
+
+def tiktoken_len(text):
+    tokens = tokenizer.encode(
+        text,
+        disallowed_special=()
+    )
+    return len(tokens)
+
 def split_doc(
-    doc: List[Document], chunk_size=BASE_CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP, chunk_idx_name: str
+    doc: List[Document], chunk_idx_name: str, chunk_size=BASE_CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP
 ):
     data_splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,

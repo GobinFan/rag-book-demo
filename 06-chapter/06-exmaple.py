@@ -4,12 +4,12 @@ from llama_index import (
     ServiceContext, 
     KeywordTableIndex,
 )
-from llama_index.retrievers import (
+from llama_index.core.retrievers import (
     BaseRetriever,
     VectorIndexRetriever,
     KeywordTableSimpleRetriever,
 )
-from llama_index.query_engine import RetrieverQueryEngine
+from llama_index.core.query_engine import RetrieverQueryEngine
 
 
 # 读取包含上市公司财报的文档目录

@@ -5,9 +5,9 @@ from llama_index import (
     StorageContext,
     
 )
-from llama_index.graph_stores import SimpleGraphStore
-from llama_index.query_engine import KnowledgeGraphQueryEngine
-from llama_index.retrievers import KGTableRetriever
+from llama_index.core.graph_stores import SimpleGraphStore
+from llama_index.core.query_engine import KnowledgeGraphQueryEngine
+from llama_index.core.retrievers import KGTableRetriever
 
 # 包含上市公司财报的目录
 documents = SimpleDirectoryReader('financial_reports').load_data()
