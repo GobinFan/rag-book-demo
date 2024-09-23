@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold">企业RAG架构</text>
+  
+  <!-- 用户输入 -->
+  <rect x="10" y="60" width="80" height="30" rx="5" ry="5" fill="#E6F3FF" stroke="#000"/>
+  <text x="50" y="80" text-anchor="middle" font-size="12">用户输入</text>
+  
+  <!-- 用户认证 -->
+  <rect x="10" y="120" width="80" height="30" rx="5" ry="5" fill="#FFCDD2" stroke="#000"/>
+  <text x="50" y="140" text-anchor="middle" font-size="12">用户认证</text>
+  
+  <!-- 输入防护 -->
+  <rect x="10" y="180" width="80" height="30" rx="5" ry="5" fill="#FFCDD2" stroke="#000"/>
+  <text x="50" y="200" text-anchor="middle" font-size="12">输入防护</text>
+  
+  <!-- 预期输入判断 -->
+  <polygon points="50,240 90,270 50,300 10,270" fill="#FFF9C4" stroke="#000"/>
+  <text x="50" y="275" text-anchor="middle" font-size="10">预期输入?</text>
+  
+  <!-- 查询重写器 -->
+  <rect x="120" y="250" width="80" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
+  <text x="160" y="270" text-anchor="middle" font-size="12">查询重写</text>
+  
+  <!-- HyDE -->
+  <rect x="230" y="250" width="60" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
+  <text x="260" y="270" text-anchor="middle" font-size="12">查询路由</text>
+  
+  <!-- 编码器 -->
+  <rect x="320" y="250" width="60" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
+  <text x="350" y="270" text-anchor="middle" font-size="12">查询编码</text>
+  
+  <!-- 检索 -->
+  <rect x="410" y="250" width="60" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
+  <text x="440" y="270" text-anchor="middle" font-size="12">检索器</text>
+  
+  <!-- 改进排名 -->
+  <rect x="500" y="250" width="80" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
+  <text x="540" y="270" text-anchor="middle" font-size="12">重排名</text>
+  
+  <!-- 生成器 -->
+  <rect x="610" y="250" width="60" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
+  <text x="640" y="270" text-anchor="middle" font-size="12">生成模型</text>
+  
+  <!-- 输出防护 -->
+  <rect x="700" y="250" width="80" height="30" rx="5" ry="5" fill="#FFCDD2" stroke="#000"/>
+  <text x="740" y="270" text-anchor="middle" font-size="12">输出防护</text>
+  
+  <!-- 最终响应 -->
+  <rect x="700" y="380" width="80" height="30" rx="5" ry="5" fill="#FFF9C4" stroke="#000"/>
+  <text x="740" y="400" text-anchor="middle" font-size="12">最终输出</text>
+  
+  <!-- 文档摄入 -->
+  <rect x="410" y="310" width="80" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
+    <text x="450" y="330" text-anchor="middle" font-size="12">召回结果</text>
+  
+  <!-- 存储 -->
+  <rect x="380" y="370" width="140" height="100" rx="5" ry="5" fill="#FFCDD2" stroke="#000"/>
+  <text x="450" y="390" text-anchor="middle" font-size="14" font-weight="bold">数据存储</text>
+  <text x="450" y="410" text-anchor="middle" font-size="12">嵌入向量</text>
+  <text x="450" y="430" text-anchor="middle" font-size="12">原始文档</text>
+  <text x="450" y="450" text-anchor="middle" font-size="12">聊天历史</text>
+  <text x="450" y="470" text-anchor="middle" font-size="12">用户反馈</text>
+  
+  <!-- 可观察性 -->
+  <rect x="300" y="180" width="300" height="40" rx="5" ry="5" fill="#FFCDD2" stroke="#000"/>
+  <text x="450" y="205" text-anchor="middle" font-size="14">可观察性</text>
+  
+  <!-- 连接线 -->
+  <path d="M50,90 V110" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M50,150 V170" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M50,210 V230" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M90,270 H110" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M200,265 H220" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M290,265 H310" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M380,265 H400" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M470,265 H490" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M580,265 H600" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M670,265 H690" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M740,280 V370" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M450,280 V300" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <path d="M450,340 V360" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+    <path d="M350,280 V420 H370" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" fill="none" stroke-dasharray="5, 5"/>
+<path d="M640,280 V420 H530" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" fill="none" stroke-dasharray="5, 5"/>
+  <path d="M700,395H530" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" fill="none" stroke-dasharray="5, 5"/>
+  <path d="M50,300 V500 H740 V420" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" fill="none" />
+  <path d="M90,195 H290" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" stroke-dasharray="1, 5"/>
+  <path d="M540,250 V230" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" stroke-dasharray="1, 5" />
+  <path d="M440,250 V230" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" stroke-dasharray="1, 5" />
+  <path d="M740,250 V200 H610" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" fill="none" stroke-dasharray="1, 5"/>
+</svg>
