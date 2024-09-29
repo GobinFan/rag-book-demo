@@ -1,0 +1,45 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 14px; }
+    .title { font-size: 18px; font-weight: bold; }
+  </style>
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" class="title">复杂查询语义路由示意图</text>
+  
+  <!-- 用户图标 -->
+  <circle cx="50" cy="200" r="20" fill="#f0f0f0" stroke="black"/>
+  <text x="50" y="235" text-anchor="middle">用户</text>
+  
+  <!-- 查询箭头 -->
+  <line x1="70" y1="200" x2="220" y2="200" stroke="black" stroke-width="2"/>
+  <polygon points="220,200 210,195 210,205" fill="black"/>
+  <text x="145" y="190" text-anchor="middle">query</text>
+  
+  <!-- 语义路由 -->
+  <rect x="220" y="160" width="120" height="80" fill="#90EE90" stroke="black" rx="20" ry="20"/>
+  <text x="280" y="210" text-anchor="middle">语义路由</text>
+  
+  <!-- 箭头到知识库 -->
+  <line x1="340" y1="200" x2="480" y2="80" stroke="black" stroke-width="2"/>
+  <line x1="340" y1="200" x2="480" y2="140" stroke="black" stroke-width="2"/>
+  <line x1="340" y1="200" x2="480" y2="200" stroke="black" stroke-width="2"/>
+  <line x1="340" y1="200" x2="480" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="340" y1="200" x2="480" y2="320" stroke="black" stroke-width="2"/>
+  
+  <!-- 知识库 -->
+  <rect x="480" y="50" width="160" height="60" fill="#ADD8E6" stroke="black" rx="10" ry="10"/>
+  <text x="560" y="85" text-anchor="middle">销售数据库</text>
+  
+  <rect x="480" y="110" width="160" height="60" fill="#ADD8E6" stroke="black" rx="10" ry="10"/>
+  <text x="560" y="145" text-anchor="middle">客户关系图谱</text>
+  
+  <rect x="480" y="170" width="160" height="60" fill="#ADD8E6" stroke="black" rx="10" ry="10"/>
+  <text x="560" y="205" text-anchor="middle">社交媒体评论库</text>
+  
+  <rect x="480" y="230" width="160" height="60" fill="#ADD8E6" stroke="black" rx="10" ry="10"/>
+  <text x="560" y="265" text-anchor="middle">产品分析知识库</text>
+  
+  <rect x="480" y="290" width="160" height="60" fill="#ADD8E6" stroke="black" rx="10" ry="10"/>
+  <text x="560" y="325" text-anchor="middle">竞争对手信息库</text>
+</svg>

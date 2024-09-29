@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <style>
+    text { font-family: Arial, sans-serif; }
+    .title { font-size: 20px; font-weight: bold; }
+    .label { font-size: 14px; }
+    .small { font-size: 12px; }
+  </style>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">RAG中的索引构建和检索流程</text>
+  
+  <!-- Index Construction -->
+  <rect x="50" y="70" width="300" height="200" fill="#f0f0f0" stroke="#000"/>
+  <text x="200" y="90" text-anchor="middle" class="label">索引构建</text>
+  
+  <rect x="70" y="110" width="120" height="40" fill="#d5f5e3" stroke="#000"/>
+  <text x="130" y="135" text-anchor="middle" class="small">文档处理</text>
+  
+  <rect x="210" y="110" width="120" height="40" fill="#d5f5e3" stroke="#000"/>
+  <text x="270" y="135" text-anchor="middle" class="small">特征提取</text>
+  
+  <rect x="70" y="170" width="120" height="40" fill="#d5f5e3" stroke="#000"/>
+  <text x="130" y="195" text-anchor="middle" class="small">向量化</text>
+  
+  <rect x="210" y="170" width="120" height="40" fill="#d5f5e3" stroke="#000"/>
+  <text x="270" y="195" text-anchor="middle" class="small">索引结构创建</text>
+  
+  <!-- Retrieval Process -->
+  <rect x="450" y="70" width="300" height="200" fill="#f0f0f0" stroke="#000"/>
+  <text x="600" y="90" text-anchor="middle" class="label">检索过程</text>
+  
+  <rect x="470" y="110" width="120" height="40" fill="#ebdef0" stroke="#000"/>
+  <text x="530" y="135" text-anchor="middle" class="small">查询处理</text>
+  
+  <rect x="610" y="110" width="120" height="40" fill="#ebdef0" stroke="#000"/>
+  <text x="670" y="135" text-anchor="middle" class="small">查询向量化</text>
+  
+  <rect x="470" y="170" width="120" height="40" fill="#ebdef0" stroke="#000"/>
+  <text x="530" y="195" text-anchor="middle" class="small">相似度计算</text>
+  
+  <rect x="610" y="170" width="120" height="40" fill="#ebdef0" stroke="#000"/>
+  <text x="670" y="195" text-anchor="middle" class="small">结果排序</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="6" markerHeight="4" 
+    refX="0" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" />
+    </marker>
+  </defs>
+  
+  <!-- Index Construction Arrows -->
+  <line x1="130" y1="150" x2="130" y2="170" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="190" y1="130" x2="210" y2="130" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="270" y1="150" x2="270" y2="170" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Retrieval Process Arrows -->
+  <line x1="530" y1="150" x2="530" y2="170" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="590" y1="130" x2="610" y2="130" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="670" y1="150" x2="670" y2="170" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Connection between Index and Retrieval -->
+  <line x1="350" y1="170" x2="450" y2="170" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="400" y="160" text-anchor="middle" class="small">利用</text>
+  
+  <!-- Feedback Arrow -->
+  <path d="M 450 200 Q 400 250 350 200" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="400" y="240" text-anchor="middle" class="small">优化</text>
+</svg>

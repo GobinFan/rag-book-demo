@@ -1,0 +1,39 @@
+graph TD
+    A[用户查询: 某公司2023年营收情况] --> B[1.查询分析与预处理]
+    B --> |分词、实体识别| C[关键词: 某公司名称, 2023年, 营收]
+    
+    C --> D[2.候选实体生成]
+    D --> |关键词检索| E[初始候选实体池]
+    E --> E1[某公司]
+    E --> E2[2023年财报]
+    E --> E3[营业收入]
+    E --> E4[...]
+    
+    E1 --> F[3.实体链接]
+    E2 --> F
+    E3 --> F
+    E4 --> F
+    F --> |向量相似性查找| G[语义相关实体]
+    
+    G --> H[4.实体排序]
+    H --> |综合排序算法| I[排序结果]
+    I --> I1[1.某公司2023年营业收入]
+    I --> I2[2.某公司2023年财报]
+    I --> I3[3.某公司信息]
+    
+    I1 --> J[5.结果返回]
+    I2 --> J
+    I3 --> J
+    J --> K[展示给用户的最终结果]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style D fill:#f9f,stroke:#333,stroke-width:2px
+    style F fill:#f9f,stroke:#333,stroke-width:2px
+    style H fill:#f9f,stroke:#333,stroke-width:2px
+    style J fill:#f9f,stroke:#333,stroke-width:2px
+
+
+
+    classDef step fill:#f9f,stroke:#333,stroke-width:2px;
+    class B,D,F,H,J step

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+    <marker id="queryarrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e91e63"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  
+  <!-- 公司实体 -->
+  <circle cx="500" cy="100" r="60" fill="#ff7043" stroke="#e64a19" stroke-width="2"/>
+  <text x="500" y="105" text-anchor="middle" font-size="16" fill="white">某公司</text>
+  <text x="500" y="125" text-anchor="middle" font-size="12" fill="white">公司</text>
+  
+  <!-- 行业实体 -->
+  <circle cx="200" cy="200" r="50" fill="#42a5f5" stroke="#1976d2" stroke-width="2"/>
+  <text x="200" y="205" text-anchor="middle" font-size="14" fill="white">新能源</text>
+  <text x="200" y="225" text-anchor="middle" font-size="12" fill="white">行业</text>
+  
+  <!-- 报告实体 -->
+  <rect x="700" y="180" width="100" height="60" rx="10" ry="10" fill="#66bb6a" stroke="#388e3c" stroke-width="2"/>
+  <text x="750" y="210" text-anchor="middle" font-size="14" fill="white">2022年报</text>
+  <text x="750" y="230" text-anchor="middle" font-size="12" fill="white">报告</text>
+  
+  <!-- 财务指标实体 -->
+  <rect x="400" y="350" width="100" height="60" rx="10" ry="10" fill="#ab47bc" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="450" y="380" text-anchor="middle" font-size="14" fill="white">营业收入</text>
+  <text x="450" y="400" text-anchor="middle" font-size="12" fill="white">财务指标</text>
+  
+  <!-- 时间实体 -->
+  <circle cx="700" cy="400" r="40" fill="#26a69a" stroke="#00796b" stroke-width="2"/>
+  <text x="700" y="405" text-anchor="middle" font-size="14" fill="white">2022年</text>
+  <text x="700" y="425" text-anchor="middle" font-size="12" fill="white">时间</text>
+  
+  <!-- 具体数值 -->
+  <rect x="550" y="500" width="140" height="40" rx="5" ry="5" fill="#ffd54f" stroke="#ffa000" stroke-width="2"/>
+  <text x="620" y="525" text-anchor="middle" font-size="14">3289.07亿元</text>
+  
+  <!-- 概念实体 -->
+  <circle cx="200" cy="400" r="50" fill="#ec407a" stroke="#c2185b" stroke-width="2"/>
+  <text x="200" y="405" text-anchor="middle" font-size="14" fill="white">营收</text>
+  <text x="200" y="425" text-anchor="middle" font-size="12" fill="white">概念</text>
+  
+  <!-- 时间范围实体 -->
+  <rect x="800" y="500" width="120" height="60" rx="10" ry="10" fill="#7e57c2" stroke="#4527a0" stroke-width="2"/>
+  <text x="860" y="530" text-anchor="middle" font-size="14" fill="white">最近五年</text>
+  <text x="860" y="550" text-anchor="middle" font-size="12" fill="white">时间范围</text>
+
+  <!-- 关系线 -->
+  <line x1="440" y1="120" x2="240" y2="180" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="320" y="130" text-anchor="middle" font-size="12" fill="#666">属于</text>
+  
+  <line x1="560" y1="120" x2="710" y2="180" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="650" y="130" text-anchor="middle" font-size="12" fill="#666">发布</text>
+  
+  <line x1="710" y1="240" x2="490" y2="350" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="620" y="320" text-anchor="middle" font-size="12" fill="#666">包含</text>
+  
+  <line x1="500" y1="380" x2="660" y2="400" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="600" y="370" text-anchor="middle" font-size="12" fill="#666">在...的值</text>
+  
+  <line x1="500" y1="400" x2="580" y2="500" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="250" y1="400" x2="400" y2="380" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="340" y="370" text-anchor="middle" font-size="12" fill="#666">对应</text>
+  
+  <line x1="740" y1="400" x2="820" y2="500" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="800" y="470" text-anchor="middle" font-size="12" fill="#666">包含于</text>
+
+  <!-- 查询路径 -->
+  <path d="M500,160 Q500,250 450,350" stroke="#e91e63" stroke-width="3" fill="none" stroke-dasharray="5,5" marker-end="url(#queryarrow)"/>
+  <text x="530" y="260" text-anchor="start" font-size="14" fill="#e91e63">1. 定位公司</text>
+  
+  <path d="M400,380 Q300,390 250,400" stroke="#e91e63" stroke-width="3" fill="none" stroke-dasharray="5,5" marker-end="url(#queryarrow)"/>
+  <text x="280" y="350" text-anchor="start" font-size="14" fill="#e91e63">2. 查找相关概念</text>
+  
+  <path d="M500,380 Q600,390 700,440" stroke="#e91e63" stroke-width="3" fill="none" stroke-dasharray="5,5" marker-end="url(#queryarrow)"/>
+  <text x="600" y="450" text-anchor="start" font-size="14" fill="#e91e63">3. 限定时间范围</text>
+
+  <!-- 说明文本 -->
+  <text x="500" y="650" text-anchor="middle" font-size="18" fill="#333">查询路径: 某公司 -> 营业收入 -> 最近五年</text>
+</svg>

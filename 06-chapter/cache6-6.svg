@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <style>
+    text { font-family: Arial, sans-serif; }
+    .title { font-size: 20px; font-weight: bold; }
+    .label { font-size: 14px; }
+    .small { font-size: 12px; }
+  </style>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">查询缓存工作原理（简洁箭头流程）</text>
+  
+  <!-- Input query -->
+  <rect x="50" y="70" width="200" height="60" fill="#f0f0f0" stroke="#000"/>
+  <text x="150" y="95" text-anchor="middle" class="label">输入查询</text>
+  <text x="150" y="115" text-anchor="middle" class="small">"这个产品具备哪些用途？"</text>
+  
+  <!-- Vector representation -->
+  <rect x="50" y="170" width="200" height="60" fill="#d5f5e3" stroke="#000"/>
+  <text x="150" y="205" text-anchor="middle" class="label">向量表示</text>
+  
+  <!-- Similarity calculation -->
+  <rect x="50" y="270" width="200" height="60" fill="#ebdef0" stroke="#000"/>
+  <text x="150" y="290" text-anchor="middle" class="label">相似度计算</text>
+  <text x="150" y="310" text-anchor="middle" class="small">与"这个产品有什么用"比较</text>
+  
+  <!-- Decision -->
+  <polygon points="150,370 100,410 200,410" fill="#f9e79f" stroke="#000"/>
+  <text x="150" y="395" text-anchor="middle" class="small">相似度 > 0.9?</text>
+  
+  <!-- Cache response -->
+  <rect x="50" y="450" width="150" height="60" fill="#fdebd0" stroke="#000"/>
+  <text x="125" y="485" text-anchor="middle" class="label">使用缓存回答</text>
+  
+  <!-- New retrieval -->
+  <rect x="250" y="450" width="150" height="60" fill="#d4e6f1" stroke="#000"/>
+  <text x="325" y="485" text-anchor="middle" class="label">执行新检索</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="6" markerHeight="4" 
+    refX="0" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" />
+    </marker>
+  </defs>
+  <line x1="150" y1="132" x2="150" y2="166" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="150" y1="232" x2="150" y2="266" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="150" y1="332" x2="150" y2="366" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="150" y1="412" x2="150" y2="446" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="402" x2="320" y2="446" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Labels for decision branches -->
+  <text x="140" y="435" class="small">是</text>
+  <text x="240" y="435" class="small">否</text>
+  
+  <!-- Output arrows -->
+  <line x1="125" y1="512" x2="125" y2="546" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="325" y1="512" x2="325" y2="546" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Output -->
+  <text x="125" y="570" text-anchor="middle" class="small">返回缓存回答</text>
+  <text x="325" y="570" text-anchor="middle" class="small">返回新生成的回答</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- 文档背景 -->
+  <rect x="10" y="10" width="780" height="60" fill="#f0f0f0" stroke="#000" />
+  <text x="400" y="45" text-anchor="middle" font-size="20">长文档</text>
+  
+  <!-- 大块 -->
+  <rect x="10" y="90" width="380" height="50" fill="#a0d0a0" stroke="#000" />
+  <text x="200" y="120" text-anchor="middle" font-size="16">大块 1</text>
+  
+  <rect x="410" y="90" width="380" height="50" fill="#a0d0a0" stroke="#000" />
+  <text x="600" y="120" text-anchor="middle" font-size="16">大块 2</text>
+  
+  <!-- 小块 -->
+  <rect x="10" y="160" width="60" height="40" fill="#ffd700" stroke="#000" />
+  <text x="40" y="185" text-anchor="middle" font-size="14">1</text>
+  
+  <rect x="80" y="160" width="60" height="40" fill="#ffd700" stroke="#000" />
+  <text x="110" y="185" text-anchor="middle" font-size="14">2</text>
+  
+  <rect x="150" y="160" width="60" height="40" fill="#ffd700" stroke="#000" />
+  <text x="180" y="185" text-anchor="middle" font-size="14">3</text>
+  
+  <rect x="220" y="160" width="60" height="40" fill="#ffd700" stroke="#000" />
+  <text x="250" y="185" text-anchor="middle" font-size="14">4</text>
+  
+  <rect x="290" y="160" width="60" height="40" fill="#ffd700" stroke="#000" />
+  <text x="320" y="185" text-anchor="middle" font-size="14">5</text>
+  
+  <rect x="360" y="160" width="60" height="40" fill="#ffd700" stroke="#000" />
+  <text x="390" y="185" text-anchor="middle" font-size="14">6</text>
+  
+  <rect x="430" y="160" width="60" height="40" fill="#ffd700" stroke="#000" />
+  <text x="460" y="185" text-anchor="middle" font-size="14">7</text>
+  
+  <rect x="500" y="160" width="60" height="40" fill="#ffd700" stroke="#000" />
+  <text x="530" y="185" text-anchor="middle" font-size="14">8</text>
+  
+  <rect x="570" y="160" width="60" height="40" fill="#ffd700" stroke="#000" />
+  <text x="600" y="185" text-anchor="middle" font-size="14">9</text>
+  
+  <!-- 滑动窗口 1 -->
+  <rect x="10" y="220" width="380" height="60" fill="none" stroke="#ff0000" stroke-width="2" />
+  <text x="200" y="250" text-anchor="middle" font-size="16" fill="#ff0000">滑动窗口 1 (块 1-6)</text>
+  
+  <!-- 滑动窗口 2 -->
+  <rect x="150" y="300" width="380" height="60" fill="none" stroke="#0000ff" stroke-width="2" />
+  <text x="340" y="330" text-anchor="middle" font-size="16" fill="#0000ff">滑动窗口 2 (块 4-9)</text>
+  
+  <!-- 箭头 -->
+  <path d="M200 280 L 200 300" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="220" y="295" text-anchor="start" font-size="14">步长 = 3</text>
+  
+  <!-- 箭头标记 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  
+  <!-- 说明文字 -->
+  <text x="400" y="400" text-anchor="middle" font-size="14">滑动窗口包含6个小块，每次移动3个小块</text>
+  <text x="400" y="430" text-anchor="middle" font-size="14">这样确保了相邻窗口之间有50%的重叠，提高了语义连续性</text>
+</svg>

@@ -1,0 +1,30 @@
+graph TD
+    A[所有上市公司年度和季度报告] --> B[第一层: 文档聚类]
+    B --> C1[新能源行业聚类]
+    B --> C2[其他行业聚类]
+    C1 --> D[第二层: 某公司相关文档]
+    D --> E1[2019年报告]
+    D --> E2[2020年报告]
+    D --> E3[2021年报告]
+    D --> E4[2022年报告]
+    D --> E5[2023年报告]
+    E1 --> F[第三层: 相关段落提取]
+    E2 --> F
+    E3 --> F
+    E4 --> F
+    E5 --> F
+    F --> G1[营收相关段落1]
+    F --> G2[营收相关段落2]
+    F --> G3[营收相关段落3]
+    G1 --> H[第四层: 精细搜索]
+    G2 --> H
+    G3 --> H
+    H --> I[最终答案: 某公司最近五年营收数据]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ccf,stroke:#333,stroke-width:2px
+    style C1 fill:#cfc,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    style F fill:#fcc,stroke:#333,stroke-width:2px
+    style H fill:#cff,stroke:#333,stroke-width:2px
+    style I fill:#ff9,stroke:#333,stroke-width:2px

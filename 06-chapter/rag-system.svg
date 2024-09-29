@@ -23,12 +23,16 @@
   <!-- 预期输入判断 -->
   <polygon points="50,240 90,270 50,300 10,270" fill="#FFF9C4" stroke="#000"/>
   <text x="50" y="275" text-anchor="middle" font-size="10">预期输入?</text>
-  
+  <!-- RAG组件 -->
+  <rect x="110" y="240" width="580" height="110" rx="10" ry="10" fill="#E1F5FE" stroke="#E1F5FE" stroke-width="2"/>
+  <text x="170" y="320" font-size="14" font-weight="bold">
+  RAG组件
+  </text>
   <!-- 查询重写器 -->
   <rect x="120" y="250" width="80" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
   <text x="160" y="270" text-anchor="middle" font-size="12">查询重写</text>
   
-  <!-- HyDE -->
+  <!-- 查询路由 -->
   <rect x="230" y="250" width="60" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
   <text x="260" y="270" text-anchor="middle" font-size="12">查询路由</text>
   
@@ -40,11 +44,11 @@
   <rect x="410" y="250" width="60" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
   <text x="440" y="270" text-anchor="middle" font-size="12">检索器</text>
   
-  <!-- 改进排名 -->
+  <!-- 重排名 -->
   <rect x="500" y="250" width="80" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
   <text x="540" y="270" text-anchor="middle" font-size="12">重排名</text>
   
-  <!-- 生成器 -->
+  <!-- 生成模型 -->
   <rect x="610" y="250" width="60" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
   <text x="640" y="270" text-anchor="middle" font-size="12">生成模型</text>
   
@@ -56,7 +60,7 @@
   <rect x="700" y="380" width="80" height="30" rx="5" ry="5" fill="#FFF9C4" stroke="#000"/>
   <text x="740" y="400" text-anchor="middle" font-size="12">最终输出</text>
   
-  <!-- 文档摄入 -->
+  <!-- 召回结果 -->
   <rect x="410" y="310" width="80" height="30" rx="5" ry="5" fill="#E1F5FE" stroke="#000"/>
     <text x="450" y="330" text-anchor="middle" font-size="12">召回结果</text>
   
@@ -68,9 +72,9 @@
   <text x="450" y="450" text-anchor="middle" font-size="12">聊天历史</text>
   <text x="450" y="470" text-anchor="middle" font-size="12">用户反馈</text>
   
-  <!-- 可观察性 -->
+  <!-- 可观测性 -->
   <rect x="300" y="180" width="300" height="40" rx="5" ry="5" fill="#FFCDD2" stroke="#000"/>
-  <text x="450" y="205" text-anchor="middle" font-size="14">可观察性</text>
+  <text x="450" y="205" text-anchor="middle" font-size="14">可观测性</text>
   
   <!-- 连接线 -->
   <path d="M50,90 V110" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
@@ -89,6 +93,9 @@
     <path d="M350,280 V420 H370" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" fill="none" stroke-dasharray="5, 5"/>
 <path d="M640,280 V420 H530" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" fill="none" stroke-dasharray="5, 5"/>
   <path d="M700,395H530" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" fill="none" stroke-dasharray="5, 5"/>
+ <text x="570" y="390" font-size="14">
+  反馈收集
+</text>
   <path d="M50,300 V500 H740 V420" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" fill="none" />
   <path d="M90,195 H290" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" stroke-dasharray="1, 5"/>
   <path d="M540,250 V230" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)" stroke-dasharray="1, 5" />
