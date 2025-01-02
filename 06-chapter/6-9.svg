@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800">
+    <style>
+        text { font-family: Arial, sans-serif; font-size: 12px; }
+        .title { font-size: 16px; font-weight: bold; }
+        .axis-label { font-size: 14px; }
+    </style>
+    
+    <!-- 背景 -->
+    <rect width="100%" height="100%" fill="#ffffff"/>
+    
+    <!-- 标题 -->
+    <text x="500" y="30" text-anchor="middle" class="title">各实验的检索精度箱线图</text>
+    
+    <!-- Y轴标签 -->
+    <text x="10" y="400" transform="rotate(-90 10,400)" text-anchor="middle" class="axis-label">实验</text>
+    
+    <!-- X轴标签 -->
+    <text x="500" y="780" text-anchor="middle" class="axis-label">检索精度</text>
+    
+    <!-- X轴 -->
+    <line x1="150" y1="750" x2="950" y2="750" stroke="black" stroke-width="1"/>
+    <text x="150" y="770" text-anchor="middle">0.60</text>
+    <text x="350" y="770" text-anchor="middle">0.70</text>
+    <text x="550" y="770" text-anchor="middle">0.80</text>
+    <text x="750" y="770" text-anchor="middle">0.90</text>
+    <text x="950" y="770" text-anchor="middle">1.00</text>
+    
+    <!-- 数据 -->
+    <!-- 经典VDB + 朴素RAG -->
+    <line x1="520" y1="60" x2="680" y2="60" stroke="black" stroke-width="1"/>
+    <rect x="560" y="50" width="80" height="20" fill="#a1d99b"/>
+    <line x1="600" y1="50" x2="600" y2="70" stroke="black" stroke-width="2"/>
+    <text x="140" y="65" text-anchor="end">经典VDB + 朴素RAG</text>
+    
+    <!-- 经典VDB + Cohere重排序 -->
+    <line x1="540" y1="90" x2="680" y2="90" stroke="black" stroke-width="1"/>
+    <rect x="580" y="80" width="60" height="20" fill="#f7fcb9"/>
+    <line x1="610" y1="80" x2="610" y2="100" stroke="black" stroke-width="2"/>
+    <text x="140" y="95" text-anchor="end">经典VDB + Cohere重排序</text>
+    
+    <!-- 经典VDB + LLM重排序 -->
+    <line x1="600" y1="120" x2="740" y2="120" stroke="black" stroke-width="1"/>
+    <rect x="640" y="110" width="60" height="20" fill="#c7e9b4"/>
+    <line x1="670" y1="110" x2="670" y2="130" stroke="black" stroke-width="2"/>
+    <text x="140" y="125" text-anchor="end">经典VDB + LLM重排序</text>
+    
+    <!-- 经典VDB + HyDE -->
+    <line x1="620" y1="150" x2="740" y2="150" stroke="black" stroke-width="1"/>
+    <rect x="660" y="140" width="40" height="20" fill="#fd8d3c"/>
+    <line x1="680" y1="140" x2="680" y2="160" stroke="black" stroke-width="2"/>
+    <text x="140" y="155" text-anchor="end">经典VDB + HyDE</text>
+    
+    <!-- 经典VDB + HyDE + Cohere重排序 -->
+    <line x1="560" y1="180" x2="720" y2="180" stroke="black" stroke-width="1"/>
+    <rect x="600" y="170" width="80" height="20" fill="#74c476"/>
+    <line x1="640" y1="170" x2="640" y2="190" stroke="black" stroke-width="2"/>
+    <text x="140" y="185" text-anchor="end">经典VDB + HyDE + Cohere重排序</text>
+    
+    <!-- 经典VDB + HyDE + LLM重排序 -->
+    <line x1="620" y1="210" x2="780" y2="210" stroke="black" stroke-width="1"/>
+    <rect x="660" y="200" width="80" height="20" fill="#fd8d3c"/>
+    <line x1="700" y1="200" x2="700" y2="220" stroke="black" stroke-width="2"/>
+    <circle cx="800" cy="210" r="3" fill="black"/>
+    <text x="140" y="215" text-anchor="end">经典VDB + HyDE + LLM重排序</text>
+    
+    <!-- 经典VDB + 最大边际相关性(MMR) -->
+    <line x1="540" y1="240" x2="660" y2="240" stroke="black" stroke-width="1"/>
+    <rect x="580" y="230" width="40" height="20" fill="#41ab5d"/>
+    <line x1="600" y1="230" x2="600" y2="250" stroke="black" stroke-width="2"/>
+    <text x="140" y="245" text-anchor="end">经典VDB + 最大边际相关性(MMR)</text>
+    
+    <!-- 经典VDB + 多查询 + 互惠 -->
+    <line x1="320" y1="270" x2="460" y2="270" stroke="black" stroke-width="1"/>
+    <rect x="360" y="260" width="60" height="20" fill="#fcc5c0"/>
+    <line x1="390" y1="260" x2="390" y2="280" stroke="black" stroke-width="2"/>
+    <text x="140" y="275" text-anchor="end">经典VDB + 多查询 + 互惠</text>
+    
+    <!-- 经典VDB + 多查询 + Cohere重排序 -->
+    <line x1="480" y1="300" x2="620" y2="300" stroke="black" stroke-width="1"/>
+    <rect x="520" y="290" width="60" height="20" fill="#d9d9d9"/>
+    <line x1="550" y1="290" x2="550" y2="310" stroke="black" stroke-width="2"/>
+    <circle cx="460" cy="300" r="3" fill="black"/>
+    <text x="140" y="305" text-anchor="end">经典VDB + 多查询 + Cohere重排序</text>
+    
+    <!-- 句子窗口检索 -->
+    <line x1="820" y1="330" x2="900" y2="330" stroke="black" stroke-width="1"/>
+    <rect x="840" y="320" width="40" height="20" fill="#756bb1"/>
+    <line x1="860" y1="320" x2="860" y2="340" stroke="black" stroke-width="2"/>
+    <circle cx="920" cy="330" r="3" fill="black"/>
+    <text x="140" y="335" text-anchor="end">句子窗口检索</text>
+    
+    <!-- 句子窗口检索 + Cohere重排序 -->
+    <line x1="840" y1="360" x2="920" y2="360" stroke="black" stroke-width="1"/>
+    <rect x="860" y="350" width="40" height="20" fill="#bcbddc"/>
+    <line x1="880" y1="350" x2="880" y2="370" stroke="black" stroke-width="2"/>
+    <circle cx="940" cy="360" r="3" fill="black"/>
+    <text x="140" y="365" text-anchor="end">句子窗口检索 + Cohere重排序</text>
+    
+    <!-- 句子窗口检索 + LLM重排序 -->
+    <line x1="860" y1="390" x2="940" y2="390" stroke="black" stroke-width="1"/>
+    <rect x="880" y="380" width="40" height="20" fill="#ffffcc"/>
+    <line x1="900" y1="380" x2="900" y2="400" stroke="black" stroke-width="2"/>
+    <text x="140" y="395" text-anchor="end">句子窗口检索 + LLM重排序</text>
+    
+    <!-- 句子窗口检索 + HyDE -->
+    <line x1="840" y1="420" x2="920" y2="420" stroke="black" stroke-width="1"/>
+    <rect x="860" y="410" width="40" height="20" fill="#a1d99b"/>
+    <line x1="880" y1="410" x2="880" y2="430" stroke="black" stroke-width="2"/>
+    <circle cx="820" cy="420" r="3" fill="black"/>
+    <circle cx="940" cy="420" r="3" fill="black"/>
+    <text x="140" y="425" text-anchor="end">句子窗口检索 + HyDE</text>
+    
+    <!-- 句子窗口检索 + HyDE + Cohere重排序 -->
+    <line x1="840" y1="450" x2="920" y2="450" stroke="black" stroke-width="1"/>
+    <rect x="860" y="440" width="40" height="20" fill="#ffffcc"/>
+    <line x1="880" y1="440" x2="880" y2="460" stroke="black" stroke-width="2"/>
+    <circle cx="940" cy="450" r="3" fill="black"/>
+    <text x="140" y="455" text-anchor="end">句子窗口检索 + HyDE + Cohere重排序</text>
+    
+    <!-- 文档摘要索引 + Cohere重排序 -->
+    <line x1="700" y1="480" x2="780" y2="480" stroke="black" stroke-width="1"/>
+    <rect x="720" y="470" width="40" height="20" fill="#c7e9b4"/>
+    <line x1="740" y1="470" x2="740" y2="490" stroke="black" stroke-width="2"/>
+    <text x="140" y="485" text-anchor="end">文档摘要索引 + Cohere重排序</text>
+    
+    <!-- 文档摘要索引 + HyDE + Cohere重排序 -->
+    <line x1="720" y1="510" x2="760" y2="510" stroke="black" stroke-width="1"/>
+    <rect x="730" y="500" width="20" height="20" fill="#fd8d3c"/>
+    <line x1="740" y1="500" x2="740" y2="520" stroke="black" stroke-width="2"/>
+    <circle cx="700" cy="510" r="3" fill="black"/>
+    <text x="140" y="515" text-anchor="end">文档摘要索引 + HyDE + Cohere重排序</text>
+</svg>
